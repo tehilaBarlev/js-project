@@ -1,0 +1,450 @@
+body{
+    direction: rtl;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.hover{
+    font-size: 0.7em;
+    justify-self: center;
+}
+
+.hover:hover{
+    z-index: 1 ;
+}
+.move-back{
+    z-index: -2 !important;  
+}
+#header{
+    width: 100%;
+    margin: 0px;   
+}
+#black-top-line{
+    background-image: url(assets/top-line.jpg);
+    height: 60px;
+    animation: top-line normal linear 40s infinite;
+    background-size: cover;
+    width:100% ;
+    position: fixed;
+}
+.nav{
+    justify-content: center;
+    border-bottom: solid 0.9px black;
+    align-items: center;
+    padding-top:70px !important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.nav-link{
+    display: inline !important; 
+    color: black !important;
+    font-size: 1em;
+}
+.nav ul li{
+    margin-right: 10px;
+    margin-left: 10px; 
+    font-size: 0.95em; 
+    
+}
+#search-input{
+    border-style: solid !important;
+    border-color:black;
+    border-bottom-style: solid !important;
+    border-width: 0.5px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    border-radius: 2px !important;
+    font-size: 0.90em;   
+}
+#search-input:focus{
+    box-shadow: 0 0 0 0.2rem rgba(170, 171, 172, 0.25);
+}
+#search-button{
+    border-style: solid !important;
+    border-color: rgba(31, 30, 30, 0.267) !important;
+    border-width: 0.5px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-align: center !important;
+    color: rgba(34, 33, 33, 0.267);
+    border-radius: 4px;
+    font-size: 0.90em;
+    padding-right: 0px;
+}
+#search-button:hover{
+    background-color: black;
+}
+#search-button:hover i{
+    color: white !important;
+}
+#to-left{
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    font-size: 1em;
+}
+#to-left span{
+    font-weight: normal !important;
+}
+i{
+   justify-self: flex-start;
+   margin-right: 15px;
+   margin-left: 3px;;
+   color: black;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 70px;
+}
+.product{
+    cursor: pointer ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px !important;
+    margin: 0px !important;
+    align-items: flex-end;
+    width:285px;
+    height: 450px;
+    margin: 100px !important;
+}
+.product img{
+    width: 300px !important;
+    height: 410px;
+}
+.product h4{
+    font-size: 1em;
+    font-weight: lighter;
+}
+.selectProductDIv{
+    background-color: rgba(255, 255, 255, 0.705);
+    position: absolute;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    
+
+}
+.selectProductDIv button{
+    margin: 12px;
+    font-size: 0.95em;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.363);
+    font-weight: lighter;
+    width:100px;
+}
+.selectProductDIv select{
+    width: 50px;
+    align-self: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    background-color: rgba(255, 255, 255, 0.514);
+    margin-bottom: 17px;
+}
+.selectProductDIv span{
+    margin: 10px;
+    margin-bottom: 17px;
+    display: block;
+    align-self: center;
+    font-size: 1.35em;
+}
+
+
+.appear{
+    animation: appear 0.3s !important;
+}
+.leave{
+    animation: leave 0.3s ;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.footer div{
+    margin:20px;
+    margin-bottom: 0px;
+    padding: 20px;
+    display: flex;
+}
+.footer li{
+    list-style-type: none;
+    direction: rtl !important;  
+
+}
+.footer a{
+    color: white !important;
+}
+#welcome a{
+    text-decoration: none;
+    margin: 15px;
+    color: rgba(34, 37, 39, 0.781);
+}
+
+#login{
+    margin-top: 35px;
+}
+
+#submit{
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.288) !important;
+    border-bottom-style: solid !important;
+    border-width: 0.5px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: black !important;
+    color: white ; 
+    margin-top: 30px;
+    margin-bottom:40px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    
+}
+#submit:hover, #enter form button:hover{
+    -webkit-transition: ease-out 1s !important;
+    transition: ease-out 0.4s !important;
+    border: none;
+    transform: scale(1.1) !important;
+    border-radius: 8px;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.288) !important;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#message, #error{
+    font-size: 15px;
+    color: red;
+    margin-bottom: 20px;
+}
+.red-error{
+    border-color:red !important;
+}
+#userName{
+    text-align: center;
+    
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(0.5) ;
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes leave{
+    0%{
+        transform:scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform:scale(0.9);
+        opacity: 0;
+    }
+}
+@keyframes top-line{
+    0%{
+        background-position-x: 2000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+
+}
+
+
+#cart-details h4{
+    font-weight:light !important;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    margin-top:18px;
+}
+
+#payment-form{
+    display:flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px;
+}
+
+#steps{
+    width:100%;
+}
+#progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+form div{
+    display: inline;
+    direction: rtl !important;
+}
+.flex-form{
+    display: flex;
+}
+.column{
+    margin-left:50px;
+    margin-right:20px;
+}
+.btn-primary{
+    background-color: white ;
+    color: black ;
+    border-color: black ;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    padding-right: 70px ;
+    padding-left: 70px ;
+}
+.btn-primary:hover{
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+    color: white;
+    background-color: black;
+    border: none;
+    transform: scale(1.1);
+}
+
+
+#launch-modal{
+    background-color: white;
+    border: none;
+    display: inline;
+    color:black !important;
+}
+.close{
+    margin-left: 10px !important;
+}
+.btnp{
+    background-color: white !important ;
+    border: none !important;
+    display: inline;
+    color:black ;
+    margin-bottom: 4px !important;
+}
+.btnp:hover{
+    background-color: white !important ;
+    border: none !important;
+    display: inline;
+    color:black ;
+    margin-bottom: 0px;
+    transform:none !important;
+    transition:none !important;
+    
+}
+.fa:hover{
+
+    transition: 0.5s;
+}
+
+#signUp-form{
+    display:flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 18px;  
+}
+#signUp-btn{
+    margin-left: 30px ;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+#signUp-btn{
+    background-color: black ;
+    color: white ;
+    border-color: white ;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    padding-right: 70px ;
+    padding-left: 70px ;
+}
+#signUp-btn:hover{
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+    color: black;
+    background-color: white;
+    border-color: black ;
+    transform: scale(1.1);
+}
+#login input, #enter form input{
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.267);
+    border-bottom-style: solid !important;
+    border-width: 0.5px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    width: 250px;
+    border-radius: 0px;
+    padding: 5px;
+    margin-left: 0px !important;
+}
+#top  {
+    display: table-cell;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.438);
+    border-radius: 5px;
+    text-decoration:none;
+    position:fixed;
+    bottom:5px;
+    right:7px;
+    border:none;
+    height:40px;
+    width:40px;
+}
+#top i{
+    color: white;
+    margin: 0px;
+    font-size: xx-large;
+    margin-top: 3px;
+}
+#top:hover {
+    background:rgb(77, 79, 82)  no-repeat bottom center;
+}
+.category{
+    cursor: pointer ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px !important;
+    margin: 0px !important;
+    align-items: flex-end;
+    width:285px;
+    height: 450px;
+
+}
+.category img{
+    width: 290px !important;
+    height: 400פס;
+}
+.cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px;
+}

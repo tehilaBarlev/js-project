@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.js"></script>
+    <link href="bootstrap-4.5.0-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.js"> </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="shortcut icon" href="assets/s.ico">
+    <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div id="headar" >
+    <a href="#"><div id="black-top-line" class="fixed-top"></div></a>
+    <nav class="nav navbar navbar-expand-lg navbar-light ">
+        <div>
+          <button type="button" class="btnp btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            <i  class="fa fa-user" data-toggle="modal" data-target="#staticBackdrop" ></i>
+          </button>
+          
+            
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <span id="productsNum">0</span>
+            
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">כל המוצרים <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">לבית</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                נעליים
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">עקב</a>
+                <a class="dropdown-item" href="#">נעלי בית</a>
+                <a class="dropdown-item" href="#">שטוחות</a>
+                <a class="dropdown-item" href="#">סניקרס</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  אקססוריז
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">סיכות שיער</a>
+                  <a class="dropdown-item" href="#">קשתות</a>
+                  <a class="dropdown-item" href="#">כובעים</a>
+                  <a class="dropdown-item" href="#">משקפיים</a>
+                  <a class="dropdown-item" href="#">גומיות</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  תיקים
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">תיקי אלכסון</a>
+                  <a class="dropdown-item" href="#">תיקי אחיזה</a>
+                  <a class="dropdown-item" href="#">תיקי גב</a>
+                  <a class="dropdown-item" href="#">תיקי קש</a>
+                </div>
+              </li>
+          </ul>
+          <form  class="form-inline my-2 my-lg-0">
+            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+
+
+</div>
+        <div id="enter">
+             
+        <h4 style="margin-top: 10px; text-align: center;">הירשם</h4>
+    
+        <form id="signUp-form" class="needs-validation"  novalidate>
+            <div class="flex-form">
+            <div class="column">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">שם פרטי</label>
+                <input type="text" class="form-control"  name="firstName" id="validationCustom01" required>
+                <div class="valid-feedback">
+                  שם פרטי תקין
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">שם משפחה</label>
+                <input type="text" class="form-control" id="validationCustom02"  name="lastName" required>
+                <div class="valid-feedback">
+                  שם משפחה תקין
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">טלפון</label>
+                <input name="phone" type="text" class="form-control" id="validationCustom03"  required>
+                <div class="valid-feedback">
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">אימייל</label>
+                <input name="email" type="email" class="form-control" id="validationCustom04"  required>
+                <div class="valid-feedback">
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">סיסמה</label>
+                <input  name="password" type="password" class="form-control" id="validationCustom05"  required>
+                <div class="valid-feedback">
+                </div>
+              </div>
+            </div>
+            
+        </div>
+            <span id="message"></span>
+            <button id="signUp-btn" class="btn btn-primary" type="submit">המשך</button>
+            
+          </form>
+          
+       
+  
+</div>   
+<footer class="footer">
+  <div>
+      <ul>
+          <li><a href="#">כל המוצרים</a></li>
+          <li><a href="#">נעליים</a></li>
+          <li><a href="#">אקססוריז</a></li>
+          <li><a href="#">לבית</a></li>
+      </ul>
+  </div>
+  <div>
+      <ul>
+          <li><a href="#"><b>שירות לקוחות</b></a></li>
+          <li><a href="#">מדיניות החזרת מוצרים</a></li>
+          <li><a href="#">צור קשר</a></li>
+          <li><a href="#">מדיניות משלוחים</a></li>
+      </ul>
+  </div>
+</footer> 
+<script src="myOwnLibrary.js"></script>
+<script src="numOfProductsInCart.js"></script>
+<script src="sign-up.js"></script>
+<script>
+  dom.navLinks =  document.querySelectorAll('.nav ul a');
+  dom.navLinks.forEach(a => {
+  a.onclick = (event) =>{
+      if(!event.target.innerText.includes('כל המוצרים')){
+      sessionStorage.currentFilter = event.target.innerText;
+      }
+      location.href = "home.html";
+  }
+});
+dom.searchInput = document.getElementById('search-input');
+dom.searchInput.onfocus = () =>{
+location.href = "home.html";
+}
+</script>
+
+</body>
+</html>
